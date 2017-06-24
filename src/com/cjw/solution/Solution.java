@@ -10,6 +10,8 @@ import java.util.Scanner;
 public class Solution {
 
 	public static void main(String[] args) {
+		System.out.println("请输入3个不同的个位数，并用','隔开：");
+		
 		Scanner in=new Scanner(System.in);
 		String specialNum=in.nextLine();
 		String[] snum=specialNum.split(",");
@@ -22,7 +24,7 @@ public class Solution {
 	
 	//完成报数的函数；
 	public static void say(int nums1[])
-	{
+	{		
 		String result=null;//输出的结果
 		boolean isSpecial=false;//是否需要报单词（即：是否特殊号码）
 		int nums[]=nums1;
