@@ -14,7 +14,7 @@ public class Solution {
 		String specialNum=in.nextLine();
 		String[] snum=specialNum.split(",");
 		int [] nums={Integer.parseInt(snum[0]),Integer.parseInt(snum[1]),Integer.parseInt(snum[2])};
-//		System.out.println(nums[0]+" "+nums[1]+" "+nums[2]);
+
 		
 		Solution.say(nums);	
 
