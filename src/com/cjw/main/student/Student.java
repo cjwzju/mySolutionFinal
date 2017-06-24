@@ -1,6 +1,6 @@
-package com.cjw.student;
+package com.cjw.main.student;
 
-import com.cjw.inter.InterRule;
+import com.cjw.main.inter.InterRule;
 
 /**
  * 现在开始 使用面向对象 的 思想，把学生单独做成一个类；

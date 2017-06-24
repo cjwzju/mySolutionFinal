@@ -1,6 +1,6 @@
-package com.cjw.rule;
+package com.cjw.main.rule;
 
-import com.cjw.inter.InterRule;
+import com.cjw.main.inter.InterRule;
 
 /**
  * 决定 把 报数规则 单独拿出来，放到一个类里面；
@@ -13,6 +13,13 @@ import com.cjw.inter.InterRule;
  */
 public class Rule implements InterRule{
 	
+		int nums[]=new int[3];
+		public Rule(int i0,int i1,int i2)
+		{
+			nums[0]=i0;
+			nums[1]=i1;
+			nums[2]=i2;
+		}
 		//为了让Student类 具有自己 完成 单独报数的功能，要对 say()函数进行相应修改，
 		//完成报数的函数；
 		public  String rulesay(int id)
@@ -49,5 +56,4 @@ public class Rule implements InterRule{
 			}
 			return result;					
 		}
-
 }

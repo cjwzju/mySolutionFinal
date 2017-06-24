@@ -1,10 +1,10 @@
-package com.cjw.solution;
+package com.cjw.main.solution;
 
 import java.util.Scanner;
 
-import com.cjw.inter.InterRule;
-import com.cjw.rule.Rule;
-import com.cjw.student.Student;
+import com.cjw.main.inter.InterRule;
+import com.cjw.main.rule.Rule;
+import com.cjw.main.student.Student;
 
 /**
  * 先在一个类中，完成基本功能，然后再 做成类或者接口
@@ -23,10 +23,9 @@ public class Solution {
 
 		nums[0]=Integer.parseInt(snum[0]);
 		nums[1]=Integer.parseInt(snum[1]);
-		nums[2]=Integer.parseInt(snum[2]);
-				
-//		System.out.println(nums[0]+" "+nums[1]+" "+nums[2]);
-		InterRule interRule=new Rule();
+		nums[2]=Integer.parseInt(snum[2]);				
+
+		InterRule interRule=new Rule(nums[0],nums[1],nums[2]);
 		for(int i=1;i<=100;i++)
 		{
 			new Student(i,interRule).say();
