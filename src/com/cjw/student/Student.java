@@ -19,6 +19,6 @@ public class Student {
 	
 	public void say()//输出结果的函数；
 	{
-		System.out.println(Rule.rulesay(Id));
+		System.out.println(new Rule().rulesay(Id));
 	}
 }
