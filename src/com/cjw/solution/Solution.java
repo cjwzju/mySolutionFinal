@@ -2,6 +2,8 @@ package com.cjw.solution;
 
 import java.util.Scanner;
 
+import com.cjw.inter.InterRule;
+import com.cjw.rule.Rule;
 import com.cjw.student.Student;
 
 /**
@@ -24,10 +26,10 @@ public class Solution {
 		nums[2]=Integer.parseInt(snum[2]);
 				
 //		System.out.println(nums[0]+" "+nums[1]+" "+nums[2]);
-		
+		InterRule interRule=new Rule();
 		for(int i=1;i<=100;i++)
 		{
-			new Student(i).say();
+			new Student(i,interRule).say();
 		}
 
 	}	

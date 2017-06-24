@@ -1,7 +1,6 @@
 package com.cjw.student;
 
 import com.cjw.inter.InterRule;
-import com.cjw.rule.Rule;
 
 /**
  * 现在开始 使用面向对象 的 思想，把学生单独做成一个类；
@@ -11,15 +10,16 @@ import com.cjw.rule.Rule;
  */
 public class Student {
 
-	int Id;//学生编号；
-	InterRule interRule=new Rule();//下面用 接口来调用方法；
-	public Student(int id)
+	int id;//学生编号；
+	InterRule interRule;//下面用 接口来调用方法；
+	public Student(int id1,InterRule interRule1)
 	{
-		Id=id;
+		id=id1;
+		interRule=interRule1;
 	}
 	
 	public void say()//输出结果的函数；
 	{
-		System.out.println(interRule.rulesay(Id));
+		System.out.println(interRule.rulesay(id));
 	}
 }
