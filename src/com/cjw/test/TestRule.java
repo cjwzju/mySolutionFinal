@@ -13,12 +13,13 @@ public class TestRule {
 	public static void main(String[] args) {
 		
 		InterRule interRule=new Rule(3,5,7);
-		boolean bs[]=new boolean[5];
+		boolean bs[]=new boolean[6];
 		bs[0]="Fizz".equals(interRule.rulesay(12));
 		bs[1]="FizzBuzz".equals(interRule.rulesay(15));
 		bs[2]="FizzWhizz".equals(interRule.rulesay(21));		
 		bs[3]="Whizz".equals(interRule.rulesay(49));
 		bs[4]="Buzz".equals(interRule.rulesay(80));		
+		bs[5]="19".equals(interRule.rulesay(19));		
 		
 		for(int i=0;i<bs.length;i++)
 		{
