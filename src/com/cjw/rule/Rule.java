@@ -4,6 +4,9 @@ import com.cjw.solution.Solution;
 
 /**
  * 决定 把 报数规则 单独拿出来，放到一个类里面；
+ * 
+ * 为了实现 在  Student类中的say()函数中 调用的解耦，现在做一个接口，在 say()函数中用接口 调用 rulesay()方法，
+ * 这样 当 rulesay（）用其他的方法实现时，就不用 进行更改调用了； 
  * @author chaijunwei
  *
  */
