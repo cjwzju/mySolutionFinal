@@ -7,6 +7,7 @@ package com.cjw.rule;
  */
 public class Rule {
 	
+		//为了让Student类 具有自己 完成 单独报数的功能，要对 say()函数进行相应修改，
 		//完成报数的函数；
 		public static void say(int nums1[])
 		{		
