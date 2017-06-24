@@ -9,18 +9,22 @@ import java.util.Scanner;
  */
 public class Solution {
 
+	public static int nums[]=new int[3]; 
 	public static void main(String[] args) {
 		System.out.println("请输入3个不同的个位数，并用','隔开：");
 		
 		Scanner in=new Scanner(System.in);
 		String specialNum=in.nextLine();
 		String[] snum=specialNum.split(",");
-		int [] nums={Integer.parseInt(snum[0]),Integer.parseInt(snum[1]),Integer.parseInt(snum[2])};
 
+		nums[0]=Integer.parseInt(snum[0]);
+		nums[1]=Integer.parseInt(snum[1]);
+		nums[2]=Integer.parseInt(snum[2]);
+				
+		System.out.println(nums[0]+" "+nums[1]+" "+nums[2]);
 		
-		Solution.say(nums);	
+//		Solution.say(nums);	
 
-	}
-	
+	}	
 	
 }
