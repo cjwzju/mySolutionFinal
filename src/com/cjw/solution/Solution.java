@@ -2,6 +2,8 @@ package com.cjw.solution;
 
 import java.util.Scanner;
 
+import com.cjw.student.Student;
+
 /**
  * 先在一个类中，完成基本功能，然后再 做成类或者接口
  * @author chaijunwei
@@ -23,7 +25,10 @@ public class Solution {
 				
 		System.out.println(nums[0]+" "+nums[1]+" "+nums[2]);
 		
-//		Solution.say(nums);	
+		for(int i=1;i<=100;i++)
+		{
+			new Student(i).say();
+		}
 
 	}	
 	
