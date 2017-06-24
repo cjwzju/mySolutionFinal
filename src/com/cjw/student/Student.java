@@ -1,5 +1,6 @@
 package com.cjw.student;
 
+import com.cjw.inter.InterRule;
 import com.cjw.rule.Rule;
 
 /**
@@ -11,7 +12,7 @@ import com.cjw.rule.Rule;
 public class Student {
 
 	int Id;//学生编号；
-	
+	InterRule interRule=new Rule();//下面用 接口来调用方法；
 	public Student(int id)
 	{
 		Id=id;
@@ -19,6 +20,6 @@ public class Student {
 	
 	public void say()//输出结果的函数；
 	{
-		System.out.println(new Rule().rulesay(Id));
+		System.out.println(interRule.rulesay(Id));
 	}
 }

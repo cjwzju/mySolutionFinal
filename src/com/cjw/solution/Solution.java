@@ -23,7 +23,7 @@ public class Solution {
 		nums[1]=Integer.parseInt(snum[1]);
 		nums[2]=Integer.parseInt(snum[2]);
 				
-		System.out.println(nums[0]+" "+nums[1]+" "+nums[2]);
+//		System.out.println(nums[0]+" "+nums[1]+" "+nums[2]);
 		
 		for(int i=1;i<=100;i++)
 		{
